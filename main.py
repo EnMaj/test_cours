@@ -6,7 +6,7 @@ import random
 import matplotlib.pyplot as plt
 
 #Предварительная обработка данных пока в разработке
-dataset = pd.read_csv("estadistical.csv")
+dataset = pd.read_csv("data.csv")
 dataset.head()
 
 x_dataset = dataset.drop("Receive/ Not receive credit ",axis=1)
