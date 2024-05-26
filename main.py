@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 import random
 import matplotlib.pyplot as plt
 
-#Предварительная обработка данных пока в разработке
+from sklearn.model_selection import train_test_split
+
 dataset = pd.read_csv("data.csv")
 dataset.head()
 
@@ -45,13 +45,12 @@ dataset = []
 for i in range(len(x)):
     dataset.append(([x[i]],y[i]))
 
-
 #Задаю гиперпараметры
 INPUT_DIM = 20  # кол-во признаков
 OUT_DIM = 2  # количество классов
 H_DIM = 50  # количество нейронов в первом слое
 ALPHA = 0.0002
-NUM_EPOCHS = 500
+NUM_EPOCHS = 60
 BATCH_SIZE = 50
 
 
